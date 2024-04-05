@@ -98,7 +98,10 @@ function takeCommand(message) {
         .replace("how", "")
         .replace("when", "")
         .replace("google", "")
-        .replace("can you", "");
+        .replace("can you", "")
+        .replace("search", "")
+        .replace("tell me", "")
+       
 
         searchWords = searchWords.trim();
         window.open(`https://www.google.com/search?q=${encodeURIComponent(searchWords)}`, "_blank");
